@@ -8,27 +8,80 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <title>Frontend Mentor | QR code component</title>
+    <title>Wenhao's QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
         .attribution {
             font-size: 11px;
             text-align: center;
+            margin-top: 20px;
         }
         
         .attribution a {
             color: hsl(228, 45%, 44%);
+        }
+        /* center the content */
+        
+        .center {
+            margin: auto;
+            max-width: 380px;
+            border: 2px solid #2c7fb8;
+            /* background-color: #2c7fb8; */
+            padding: 15px;
+            box-shadow: 5px 10px 8px #888888;
+            border-radius: 35px;
+        }
+        
+        #introID {
+            display: flex;
+            justify-content: center;
+            margin: 10px auto;
+            text-align: center;
+            max-width: 350px;
+            word-wrap: normal;
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            color: #2c7fb8;
+        }
+        
+        #labelID {
+            display: flex;
+            justify-content: center;
+            margin: 10px auto;
+            text-align: center;
+            max-width: 350px;
+            word-wrap: normal;
+            font-family: Helvetica, sans-serif;
+            font-size: 15px;
+            color: grey;
+        }
+        
+        #qrcodeID {
+            display: flex;
+            justify-content: center;
+            /* setting the top and bottom margins to 0, and left and right to auto (center by default) */
+            margin: 0 auto;
+            max-width: 350px;
         }
     </style>
 </head>
 
 <body>
 
-    This is a QR Code Component for the web Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    <div class="center">
+
+        <img id="qrcodeID" src="images/wenhao-ins-qr-code.png"></img>
+
+        <p id="introID">Improve your drawing skills by sketching more</p>
+
+        <p id="labelID">Scan the QR Code above to explore some interesting urban sketches around the Bay Area!</p>
+
+    </div>
 
     <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Wenhao Wu</a>.
+        Inspired by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/wenhaowuuu">Wenhao Wu</a>.
     </div>
 </body>
 
